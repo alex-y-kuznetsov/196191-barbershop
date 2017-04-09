@@ -128,3 +128,18 @@ h2 {
 .catalog-contents {
   font-size: 14px;
 }
+.item-images {
+  float: left;
+  width: 486px;
+  font-size: 0;
+}
+.item-images a {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+.item-details,
+.item-contents {
+  float: right;
+  width: 390px;
+}
