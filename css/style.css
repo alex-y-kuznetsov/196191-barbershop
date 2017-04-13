@@ -8,6 +8,7 @@ body {
   min-width: 960px;
   text-transform: uppercase;
   background: #000000 url("../img/barbershop-index-background.jpg") no-repeat center top;
+  /*Вырезать картинку заново*/
 }
 h1 {
   font-size: 30px;
@@ -90,7 +91,8 @@ h2 {
   left: 20px;
 }
 /*.login-button:hover::before {
-
+Вставить картинку из спрайта
+  opacity: 1;
 }*/
 .login-button:hover {
   background-color: #242424;
@@ -98,9 +100,12 @@ h2 {
 .index-logo {
   width: 368px;
   height: 204px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   margin-bottom: 25px;
+}
+.index-logo img {
+  width: 368px;
+  height: 204px;
 }
 .features {
   margin-bottom: 80px;
@@ -109,10 +114,34 @@ h2 {
   float: left;
   width: 300px;
   margin-right: 20px;
-  min-height: 175px;
+  text-align: center;
 }
 .features-item:last-child {
   margin-right: 0;
+}
+.features-name {
+  display: block;
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 30px;
+  padding-bottom: 35px;
+  position: relative;
+}
+.features-name::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -10px;
+  transform: rotate(45deg);
+}
+.features-item p {
+  margin: 10px;
+  margin-bottom: 0;
 }
 .index-content {
   padding: 50px 80px;
