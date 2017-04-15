@@ -1,5 +1,4 @@
 body {
-  /*Типографика*/
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
@@ -8,7 +7,6 @@ body {
   min-width: 960px;
   text-transform: uppercase;
   background: #000000 url("../img/barbershop-index-background.jpg") no-repeat center top;
-  /*Вырезать картинку заново*/
 }
 h1 {
   font-size: 30px;
