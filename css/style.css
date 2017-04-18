@@ -286,6 +286,7 @@ h2 {
 }
 .title {
   margin-left: 20px;
+  margin-bottom: 30px;
 }
 .title h1 {
   margin-top: 15px;
@@ -299,29 +300,82 @@ h2 {
 .breadcrumbs li {
   display: inline-block;
   margin-right: 40px;
+  position: relative;
 }
 .breadcrumbs a {
   display: block;
   text-decoration: none;
   color: #000000;
 }
-/*.breadcrumbs li:first-child::after,
+.breadcrumbs .current {
+  color: #aeacaa;
+}
+.breadcrumbs li:first-child::after,
 .breadcrumbs li:nth-child(2)::after {
   content: "";
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 7px;
+  height: 7px;
   background-color: #000000;
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -10px;
+  bottom: 50%;
+  margin-bottom: -2px;
+  left: 65px;
   transform: rotate(45deg);
-}*/
+}
 .manufacturers {
   float: left;
   width: 220px;
   min-height: 570px;
+  margin-left: 20px;
+}
+.manufacturers h2 {
+  margin-bottom: 28px;
+}
+.manufacturers-brands input,
+.manufacturers-groups input {
+  display: none;
+}
+.manufacturers label {
+  display: block;
+  margin-left: 45px;
+  padding-bottom: 19px;
+  line-height: 18px;
+  position: relative;
+}
+.manufacturers-brands label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -47px;
+  top: -3px;
+  background: url("../img/barbershop-checkbox.png") no-repeat;
+}
+.manufacturers-brands input[type=checkbox]:checked+label::before {
+  background-position: 0 -20px;
+}
+.manufacturers-groups label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -47px;
+  top: -3px;
+  background: url("../img/barbershop-radio-icon.png") no-repeat;
+}
+.manufacturers-groups input[type=radio]:checked+label::before {
+  background-position: 0 -20px;
+}
+.manufacturers-brands,
+.manufacturers-groups {
+  margin-bottom: 32px;
+}
+.manufacturers .btn {
+  font-size: 13px;
+  width: 112px;
 }
 .catalog-items {
   float: right;
