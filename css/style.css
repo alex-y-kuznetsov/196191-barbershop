@@ -309,9 +309,9 @@ h2 {
 }
 .breadcrumbs .current {
   color: #aeacaa;
+
 }
-.breadcrumbs li:first-child::after,
-.breadcrumbs li:nth-child(2)::after {
+.breadcrumbs li::after {
   content: "";
   display: block;
   width: 7px;
@@ -320,8 +320,11 @@ h2 {
   position: absolute;
   bottom: 50%;
   margin-bottom: -2px;
-  left: 65px;
+  right: -25px;
   transform: rotate(45deg);
+}
+.breadcrumbs li:last-child::after {
+  display: none;
 }
 .manufacturers {
   float: left;
@@ -453,11 +456,20 @@ h2 {
   float: left;
   width: 486px;
   font-size: 0;
+  padding: 0;
+  line-height: 0;
 }
-.item-images a {
+.item-images img:first-child {
+  margin-bottom: 20px;
+}
+.item-images img {
   display: inline-block;
   vertical-align: top;
-  margin: 0;
+  margin-right: 20px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+.item-images a:last-child {
+  margin-right: 0;
 }
 .item-details,
 .item-contents {
