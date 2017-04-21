@@ -434,6 +434,7 @@ h2 {
   font-size: 0;
   display: block;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 .catalog-contents ul {
   padding-left: 0;
@@ -464,6 +465,7 @@ h2 {
   line-height: 0;
   margin-left: 20px;
   padding-top: 22px;
+  margin-bottom: 30px;
 }
 .item-images img:first-child {
   margin-bottom: 20px;
@@ -522,11 +524,14 @@ h2 {
   transform: rotate(45deg);
 }
 .main-footer {
-  margin-top: 65px;
+  /*margin-top: 65px;*/
   padding-top: 60px;
   padding-bottom: 40px;
   color: #ffffff;
   background: #252525 url("../img/barbershop-footer-texture.png");
+}
+.footer-index {
+  margin-top: 65px;
 }
 .footer-contacts {
   float: left;
