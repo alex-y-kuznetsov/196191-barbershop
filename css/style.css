@@ -523,6 +523,50 @@ h2 {
   left: -20px;
   transform: rotate(45deg);
 }
+.price-content {
+  margin-left: 20px;
+}
+.tagline {
+  display: block;
+  margin: 55px auto;
+  font-size: 49px;
+  width: 580px;
+  text-align: center;
+  position: relative;
+}
+.tagline::before {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 5px;
+  border-bottom: 2px solid #000000;
+  position: absolute;
+  left: -183px;
+  bottom: 15px;
+}
+.tagline::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 5px;
+  border-bottom: 2px solid #000000;
+  position: absolute;
+  right: -183px;
+  bottom: 15px;
+}
+.products-we-use {
+  float: left;
+}
+.barbers-and-prices {
+  float: right;
+}
+.about-us {
+  clear: both;
+}
+.products-we-use h2 {
+  display: block;
+  width: 240px;
+}
 .main-footer {
   /*margin-top: 65px;*/
   padding-top: 60px;
