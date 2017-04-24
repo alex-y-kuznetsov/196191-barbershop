@@ -74,6 +74,9 @@ h2 {
   left: 20px;
   right: 20px;
 }
+.main-navigation .selected:hover {
+  background: none;
+}
 .navigation-logo {
   width: 140px;
   text-align: center;
